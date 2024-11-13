@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: 'PT Sans', sans-serif;
+   background: linear-gradient(135deg, #4a90e2, #9013fe);
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   padding: 20px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    background-color: #9013fe;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3 ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #7e0fdc;
+    transform: translateY(-3px);
+}
+
+#answer h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+#answer.visible .invisible {
+    visibility: visible;
+}
